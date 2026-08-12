@@ -1,0 +1,6 @@
+{
+  "name": "Kent Owl Academy",
+  "description": "Kent Owl Academy website built with TanStack Router/Start, Tailwind CSS, and Sanity CMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
