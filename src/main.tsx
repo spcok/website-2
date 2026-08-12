@@ -1,13 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { RouterProvider } from '@tanstack/react-router';
+import { createRouter } from './router';
 import './index.css'; // This is what applies your Tailwind styles
 
-// Import the auto-generated route tree from the Vite plugin
-import { routeTree } from './routeTree.gen';
-
-// Create a new router instance
-const router = createRouter({ routeTree });
+// Create router instance from configured router module
+const router = createRouter();
 
 // Register the router instance for strict type safety across the app
 declare module '@tanstack/react-router' {
